@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootStrap5/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/swiperSlider/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./vendor/fontAwesome/fontawesome.min.css">
+    <link rel="stylesheet" href="./vendor/animated/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script src="./vendor/jquery/jquery-3.7.1.js"></script>
+    <script src="./vendor/swiperSlider/swiper-bundle.min.js"></script>
+    <script src="./vendor/animated/wow.min.js"></script>
+</head>
+<body>
+    <!-- BEGIN: top header -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <ul class="top-header-info">
+                        <li>&#128222;
+                            +1 123 456 7890
+                        </li>
+                        <li>&#128231; info@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <ul class="top-header-social">
+                        <li>
+                            <a href="#">
+                                <svg enable-background="new 0 0 32 32" height="30" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                    <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#3B5998"/>
+                                    <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" fill="#FFFFFF" id="f"/>
+                                    </g>
+                                    <g/>
+                                    <g/>
+                                    <g/>
+                                    <g/>
+                                    <g/>
+                                    <g/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="30" height="30" id="Layer_1" viewBox="0 0 460.1 436.6" width="2500" xmlns="http://www.w3.org/2000/svg">
+                                    <style>.st0{fill:#fdfefe}.st1{fill:#0180c7}.st2{fill:#0172b1}.st3{fill:none;stroke:#0180c7;stroke-width:2;stroke-miterlimit:10;}</style>
+                                    <title/>
+                                    <path class="st0" d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z"/>
+                                    <path class="st1" d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z"/>
+                                    <path class="st2" d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z"/>
+                                    <path class="st1" d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z"/>
+                                    <path class="st1" d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z"/>
+                                    <path class="st0" d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z"/>
+                                    <path class="st3" d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="30" height="30" enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <linearGradient gradientTransform="matrix(1 0 0 -1 594 633)" gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="-577.5122" x2="-482.4879" y1="501.1455" y2="636.8544">
+                                        <stop offset="0" style="stop-color:#FFB900"/>
+                                        <stop offset="1" style="stop-color:#9100EB"/>
+                                    </linearGradient>
+                                    <path d="M128,112c0,8.8-7.2,16-16,16H16c-8.8,0-16-7.2-16-16V16C0,7.2,7.2,0,16,0h96c8.8,0,16,7.2,16,16V112z  " fill="url(#SVGID_1_)"/>
+                                    <g>
+                                        <g>
+                                        <path d="M86,112H42c-14.336,0-26-11.663-26-26V42c0-14.336,11.664-26,26-26h44c14.337,0,26,11.664,26,26v44    C112,100.337,100.337,112,86,112z M42,24c-9.925,0-18,8.075-18,18v44c0,9.925,8.075,18,18,18h44c9.925,0,18-8.075,18-18V42    c0-9.925-8.075-18-18-18H42z" fill="#FFFFFF"/>
+                                    </g>
+                                        <g>
+                                            <path d="M64,88c-13.234,0-24-10.767-24-24c0-13.234,10.766-24,24-24c13.233,0,24,10.766,24,24    C88,77.233,77.233,88,64,88z M64,48c-8.822,0-16,7.178-16,16s7.178,16,16,16s16-7.178,16-16S72.822,48,64,48z" fill="#FFFFFF"/>
+                                    </g>
+                                    <g>
+                                    <circle cx="89.5" cy="38.5" fill="#FFFFFF" r="5.5"/>
+                                    </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: top header -->
+    <header>
+        <!-- BEGIN: Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler me-auto" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Watch</a>
+                <div class="collapse navbar-collapse ms-auto me-auto" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sản phẩm</a>
+                            <!-- BEGIN: Mega Dropdown -->
+                            <div class="mega-dropdown">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3 class="mega-doprdown-heading">Đông hồ Nam</h3>
+                                        <ul class="mega-dropdown-list">
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nam</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nữ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đôi</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ thông minh</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ cơ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đeo tay</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đeo tay</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đeo tay</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="mega-doprdown-heading">Đông hồ Nam</h3>
+                                        <ul class="mega-dropdown-list">
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nam</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nữ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đôi</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ thông minh</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ cơ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="mega-doprdown-heading">Đông hồ Nam</h3>
+                                        <ul class="mega-dropdown-list">
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nam</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nữ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đôi</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ thông minh</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ cơ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h3 class="mega-doprdown-heading">Đông hồ Nam</h3>
+                                        <ul class="mega-dropdown-list">
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nam</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ nữ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ đôi</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ thông minh</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ cơ</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                            <li class="mega-dropdown-item">
+                                                <a href="#">Đồng hồ điện tử</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Mega Dropdown -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                    </ul>
+                    <!-- BEGIN: Cart -->
+                    <div class="cart">
+                        <div class="cart-icon">
+                            <svg class="feather feather-shopping-cart" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="21" r="1"/>
+                                <circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.25 12h12.526l2.25-12h4"/>
+                            </svg>
+                        </div>
+                        <div class="cart-count">0</div>
+                    </div>
+                    <!-- END: Cart -->
+                </div>
+                <div class="search-bar">
+                    <form class="search-form" action="#" method="GET">
+                        <input type="text" name="search" placeholder="Tìm kiếm...">
+                        <button type="submit">
+                            <svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+    </header>
+    <div class="home">
+        <!-- BEGIN: Bread Crumb -->
+        <div class="bread-crumb">
+            <div class="container">
+                <ul class="bread-crumb-list">
+                    <li class="bread-crumb-item">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Bread Crumb -->
+        <!-- BEGIN: Banner Slider -->
+        <div class="banner-slider">
+           <!-- Slider main container -->
+           <div class="banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="../images/banner-dong-ho-nam.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner-dong-ho-nam.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner-dong-ho-nam.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner-dong-ho-nam.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/banner-dong-ho-nam.jpg" alt="">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        </div>
+        <!-- END: Banner Slider -->
+        <!-- BEGIN: About -->
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <div class="about-box">
+                            <div class="about-item">
+                                <div class="icon">
+                                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2zm14.75 34.917h-9.833v9.833h-9.834v-9.833H17.25v-9.834h9.833V17.25h9.834v9.833h9.833v9.834z" fill="#fff"></path></g></svg>
+                                </div>
+                                <span class="title">Thương hiệu uy tín</span>
+                                <p class="desc">Lâu đời 70 năm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <div class="about-box">
+                            <div class="about-item">
+                                <div class="icon">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.188 238.188" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 238.188 238.188"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M209.169,208.188v-23.336H182.75l39.279-39.279V60.298L161.731,0H76.457L16.158,60.298v85.274l39.279,39.279h-26.42v23.336 H4.26v30h71.113v-23.336h87.44v23.336h71.113v-30H209.169z M46.158,72.724L88.882,30h60.423l42.725,42.724v60.423l-42.725,42.725 H88.882l-42.725-42.725V72.724z"></path> <polygon points="145.593,122.444 134.093,122.444 134.093,53.426 92.593,53.426 92.593,83.426 104.093,83.426 104.093,122.444 92.593,122.444 92.593,152.444 145.593,152.444 "></polygon> </g> </g></svg>
+                                </div>
+                                <span class="title">Thương hiệu uy tín</span>
+                                <p class="desc">Lâu đời 70 năm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                        <div class="about-box">
+                            <div class="about-item">
+                                <div class="icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.5 10-.035-.139A2.457 2.457 0 0 0 12.082 8h-.522a1.841 1.841 0 0 0-.684 3.55l2.248.9A1.841 1.841 0 0 1 12.44 16h-.521a2.457 2.457 0 0 1-2.384-1.861L9.5 14M12 6v2m0 8v2m9-6a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path> </g></svg>
+                                </div>
+                                <span class="title">Thương hiệu uy tín</span>
+                                <p class="desc">Lâu đời 70 năm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: About -->
+        <!-- BEGIN: Side By Side Banner -->
+        <div class="sub-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="img">
+                        <img src="./images/1520143360667.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="img">
+                        <img src="./images/banner dong ho frederique constaint.png" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Side By Side Banner -->
+        <!-- BEGIN: Brand -->
+        <div class="brand">
+            <div class="container">
+                <div class="brand-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./images/Seiko_logo.svg.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/Casio_logo.svg.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/Calvin_klein_logo.svg.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/6770.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/Citizen_logo.svg.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/1200px-Longines_logo.svg.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Brand -->
+        <!-- BEGIN: Product -->
+        <!-- BEGIN: Product List -->
+        <div class="product-list sales">
+            <div class="container">
+                <div class="product-list-heading">
+                    <h3 class="product-list-title">Đồng hồ Sales</h3>
+                </div>
+                <div class="product-list-tabs">
+                    <ul class="product-list-tabs-list">
+                        <li class="product-list-tabs-item sales active">
+                            Đồng hồ nam
+                        </li>
+                        <li class="product-list-tabs-item sales">
+                            Đồng hồ nữ
+                        </li>
+                        <li class="product-list-tabs-item sales">
+                            Đồng hồ đôi
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list-content active">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-content">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-content">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="watch-more">
+                    <a href="#" class="watch-more-btn">Xem Tất cả</a>
+                </div>
+            </div>
+        </div>
+        <div class="product-list new">
+            <div class="container">
+                <div class="product-list-heading">
+                    <h3 class="product-list-title">Đồng hồ Mới</h3>
+                </div>
+                <div class="product-list-tabs">
+                    <ul class="product-list-tabs-list">
+                        <li class="product-list-tabs-item new active">
+                            Đồng hồ nam
+                        </li>
+                        <li class="product-list-tabs-item new">
+                            Đồng hồ nữ
+                        </li>
+                        <li class="product-list-tabs-item new">
+                            Đồng hồ đôi
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list-content active">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                                <img src="../images/watch_166020457723597.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-content">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/elio-ec013-02-nu-thumb-600x600.jpg" alt="">
+                                <img src="./images/elio-ec013-02-nu-2.jpg" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-content">
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">2.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.320.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">3.420.000&#8363;</span>
+                            <span class="product-list-item-old-price">4.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span>&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.500.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.000.000&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Tag Heuer</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.000.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Rolex</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">1.604.000&#8363;</span>
+                            <span class="product-list-item-old-price">2.050.00&#8363;</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Casio</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">650.000&#8363;</span>
+                            <span class="product-list-item-old-price"></span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list-item">
+                        <div class="product-list-item-img">
+                            <a href="#">
+                                <img src="./images/qq-s392j202y-s393j202y-nam-nu-1-600x600.jpg" alt="">
+                                <img src="./images/dondhocapdoiwebredep_zMEc1s8i.png" alt="" class="second-img">
+                            </a>
+                        </div>
+                        <div class="product-list-item-details">
+                            <span class="product-list-item-brand">Omega</span>
+                            <p class="product-list-item-name">Đồng hồ đeo tay</p>
+                            <span class="product-list-item-price">5.050.000&#8363;</span>
+                            <span class="product-list-item-old-price">5.900.000</span>
+                            <div class="product-list-item-rating">
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="filled">&#9733;</span>
+                                <span class="">&#9733;</span>
+                                <span class="rating-total"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="watch-more">
+                    <a href="#" class="watch-more-btn">Xem Tất cả</a>
+                </div>
+            </div>
+        </div>
+        <!-- END: Product List -->
+        <!-- BEGIN: Why Choose -->
+        <div class="why-choose">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="heading-title">Vì sao nên chọn chúng tôi</h3>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="why-choose-card">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.1459 7.02251C11.5259 6.34084 11.7159 6 12 6C12.2841 6 12.4741 6.34084 12.8541 7.02251L12.9524 7.19887C13.0603 7.39258 13.1143 7.48944 13.1985 7.55334C13.2827 7.61725 13.3875 7.64097 13.5972 7.68841L13.7881 7.73161C14.526 7.89857 14.895 7.98205 14.9828 8.26432C15.0706 8.54659 14.819 8.84072 14.316 9.42898L14.1858 9.58117C14.0429 9.74833 13.9714 9.83191 13.9392 9.93531C13.9071 10.0387 13.9179 10.1502 13.9395 10.3733L13.9592 10.5763C14.0352 11.3612 14.0733 11.7536 13.8435 11.9281C13.6136 12.1025 13.2682 11.9435 12.5773 11.6254L12.3986 11.5431C12.2022 11.4527 12.1041 11.4075 12 11.4075C11.8959 11.4075 11.7978 11.4527 11.6014 11.5431L11.4227 11.6254C10.7318 11.9435 10.3864 12.1025 10.1565 11.9281C9.92674 11.7536 9.96476 11.3612 10.0408 10.5763L10.0605 10.3733C10.0821 10.1502 10.0929 10.0387 10.0608 9.93531C10.0286 9.83191 9.95713 9.74833 9.81418 9.58117L9.68403 9.42898C9.18097 8.84072 8.92945 8.54659 9.01723 8.26432C9.10501 7.98205 9.47396 7.89857 10.2119 7.73161L10.4028 7.68841C10.6125 7.64097 10.7173 7.61725 10.8015 7.55334C10.8857 7.48944 10.9397 7.39258 11.0476 7.19887L11.1459 7.02251Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M19 9C19 12.866 15.866 16 12 16C8.13401 16 5 12.866 5 9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9Z" stroke="#1C274C" stroke-width="1.5"></path> <path d="M12 16.0678L8.22855 19.9728C7.68843 20.5321 7.41837 20.8117 7.18967 20.9084C6.66852 21.1289 6.09042 20.9402 5.81628 20.4602C5.69597 20.2495 5.65848 19.8695 5.5835 19.1095C5.54117 18.6804 5.52 18.4658 5.45575 18.2861C5.31191 17.8838 5.00966 17.5708 4.6211 17.4219C4.44754 17.3554 4.24033 17.3335 3.82589 17.2896C3.09187 17.212 2.72486 17.1732 2.52138 17.0486C2.05772 16.7648 1.87548 16.1662 2.08843 15.6266C2.18188 15.3898 2.45194 15.1102 2.99206 14.5509L5.45575 12" stroke="#1C274C" stroke-width="1.5"></path> <path d="M12 16.0678L15.7715 19.9728C16.3116 20.5321 16.5816 20.8117 16.8103 20.9084C17.3315 21.1289 17.9096 20.9402 18.1837 20.4602C18.304 20.2495 18.3415 19.8695 18.4165 19.1095C18.4588 18.6804 18.48 18.4658 18.5442 18.2861C18.6881 17.8838 18.9903 17.5708 19.3789 17.4219C19.5525 17.3554 19.7597 17.3335 20.1741 17.2896C20.9081 17.212 21.2751 17.1732 21.4786 17.0486C21.9423 16.7648 22.1245 16.1662 21.9116 15.6266C21.8181 15.3898 21.5481 15.1102 21.0079 14.5509L18.5442 12" stroke="#1C274C" stroke-width="1.5"></path> </g></svg>
+                            <span class="title">100% hàng chính hãng</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="why-choose-card">
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M128.896 736H96a32 32 0 0 1-32-32V224a32 32 0 0 1 32-32h576a32 32 0 0 1 32 32v96h164.544a32 32 0 0 1 31.616 27.136l54.144 352A32 32 0 0 1 922.688 736h-91.52a144 144 0 1 1-286.272 0H415.104a144 144 0 1 1-286.272 0zm23.36-64a143.872 143.872 0 0 1 239.488 0H568.32c17.088-25.6 42.24-45.376 71.744-55.808V256H128v416h24.256zm655.488 0h77.632l-19.648-128H704v64.896A144 144 0 0 1 807.744 672zm48.128-192-14.72-96H704v96h151.872zM688 832a80 80 0 1 0 0-160 80 80 0 0 0 0 160zm-416 0a80 80 0 1 0 0-160 80 80 0 0 0 0 160z"></path></g></svg>
+                        <span class="title">Miễn phí vận chuyển</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="why-choose-card">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.167 45.167" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#010002;" d="M38.255,7.859v2.597c0,2.414-1.964,4.378-4.378,4.378s-4.378-1.964-4.378-4.378V7.5H15.5v2.956 c0,2.414-1.964,4.378-4.378,4.378s-4.378-1.964-4.378-4.378v-2.53C4.983,8.7,3.75,10.454,3.75,12.5v27.667c0,2.761,2.239,5,5,5 h27.667c2.761,0,5-2.239,5-5V12.5C41.417,10.39,40.105,8.593,38.255,7.859z M37.338,40.672H7.828V19h29.51V40.672z"></path> <path style="fill:#010002;" d="M11.122,12.834c1.314,0,2.378-1.065,2.378-2.378V7.5V2.378C13.5,1.065,12.435,0,11.122,0 C9.808,0,8.744,1.065,8.744,2.378v5.123v2.955C8.744,11.77,9.809,12.834,11.122,12.834z"></path> <path style="fill:#010002;" d="M33.877,12.834c1.314,0,2.378-1.065,2.378-2.378V7.5V2.378C36.255,1.065,35.19,0,33.877,0 s-2.378,1.065-2.378,2.378V7.5v2.956C31.499,11.77,32.564,12.834,33.877,12.834z"></path> <path style="fill:#010002;" d="M35.338,21H9.828v17.672h25.51V21z M26.524,26.893l-4.681,8.495 c-0.333,0.617-0.733,0.866-1.233,0.866c-0.683,0-1.316-0.417-1.316-1.15c0-0.216,0.1-0.565,0.233-0.799l4.331-7.596h-4.464 c-0.617,0-1.116-0.483-1.116-1.1c0-0.616,0.499-1.116,1.116-1.116h6.33c0.717,0,1.166,0.417,1.166,1.15 C26.89,26.026,26.74,26.493,26.524,26.893z"></path> </g> </g> </g></svg>
+                            <span class="title">Đổi trả tỏng 7 ngày</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="why-choose-card">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.302 21.6149C11.5234 21.744 11.6341 21.8086 11.7903 21.8421C11.9116 21.8681 12.0884 21.8681 12.2097 21.8421C12.3659 21.8086 12.4766 21.744 12.698 21.6149C14.646 20.4784 20 16.9084 20 12V6.6C20 6.04207 20 5.7631 19.8926 5.55048C19.7974 5.36198 19.6487 5.21152 19.4613 5.11409C19.25 5.00419 18.9663 5.00084 18.3988 4.99413C15.4272 4.95899 13.7136 4.71361 12 3C10.2864 4.71361 8.57279 4.95899 5.6012 4.99413C5.03373 5.00084 4.74999 5.00419 4.53865 5.11409C4.35129 5.21152 4.20259 5.36198 4.10739 5.55048C4 5.7631 4 6.04207 4 6.6V12C4 16.9084 9.35396 20.4784 11.302 21.6149Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            <span class="title">Bảo hành 5 năm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="heading">
+                            <h3 class="heading-title">Đại lý ủy quyền chính thức các thương hiệu lớn</h3>
+                        </div>
+                        <div class="brand-swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="./images/Seiko_logo.svg.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/Casio_logo.svg.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/Calvin_klein_logo.svg.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/6770.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/Citizen_logo.svg.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/1200px-Longines_logo.svg.png" alt="">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="certifications">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./images/longines_1616385184.jpg.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/mido_1597994200.jpg.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/citizen_1597993731.jpg.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/tissot-author5_1576645138.jpg.webp" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/frederique-constant2_1576645058.jpg.webp" alt="">
+                            </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Why Choose -->
+        <!-- BEGIN: Home News -->
+        <div class="news">
+            <div class="container">
+                <div class="heading">
+                    <h3 class="heading-title">Tin tức</h3>
+                </div>
+                <div class="row">
+                    <div class="left-blog col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="news-blog">
+                            <div class="blog-content">
+                                <span class="title">
+                                    <a href="#">Khi trên đồng hồ Geneve có nghĩa là gì ?</a>
+                                </span>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem quas quis commodi quasi assumenda vitae aliquid expedita doloremque quaerat accusantium, deleniti iure. Cupiditate voluptas nihil harum, ipsa cum odio!</p>
+                                <div class="date">12/12/2024</div>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/untitled_1704511984.jpg.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-blog">
+                            <div class="blog-content">
+                                <span class="title">
+                                    <a href="#">Khi trên đồng hồ Geneve có nghĩa là gì ?</a>
+                                </span>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem quas quis commodi quasi assumenda vitae aliquid expedita doloremque quaerat accusantium, deleniti iure. Cupiditate voluptas nihil harum, ipsa cum odio!</p>
+                                <div class="date">12/12/2024</div>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/untitled_1704511984.jpg.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-blog">
+                            <div class="blog-content">
+                                <span class="title">
+                                    <a href="#">Khi trên đồng hồ Geneve có nghĩa là gì ?</a>
+                                </span>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem quas quis commodi quasi assumenda vitae aliquid expedita doloremque quaerat accusantium, deleniti iure. Cupiditate voluptas nihil harum, ipsa cum odio!</p>
+                                <div class="date">12/12/2024</div>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/untitled_1704511984.jpg.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-blog">
+                            <div class="blog-content">
+                                <span class="title">
+                                    <a href="#">Khi trên đồng hồ Geneve có nghĩa là gì ?</a>
+                                </span>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem quas quis commodi quasi assumenda vitae aliquid expedita doloremque quaerat accusantium, deleniti iure. Cupiditate voluptas nihil harum, ipsa cum odio!</p>
+                                <div class="date">12/12/2024</div>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/untitled_1704511984.jpg.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news-blog">
+                            <div class="blog-content">
+                                <span class="title">
+                                    <a href="#">Khi trên đồng hồ Geneve có nghĩa là gì ?</a>
+                                </span>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem quas quis commodi quasi assumenda vitae aliquid expedita doloremque quaerat accusantium, deleniti iure. Cupiditate voluptas nihil harum, ipsa cum odio!</p>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="./images/untitled_1704511984.jpg.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="news-video">
+                            <img src="./images/banner dong ho frederique constaint.png" alt="">
+                        </div>
+                        <div class="news-video-grid">
+                            <div class="news-video-item">
+                                <img src="./images/banner dong ho frederique constaint.png" alt="">
+                            </div>
+                            <div class="news-video-item">
+                                <img src="./images/banner dong ho frederique constaint.png" alt="">
+                            </div>
+                            <div class="news-video-item">
+                                <img src="./images/banner dong ho frederique constaint.png" alt="">
+                            </div>
+                            <div class="news-video-item">
+                                <img src="./images/banner dong ho frederique constaint.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Home News -->
+        <!-- BEGIN: Section Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Địa chỉ</h3>
+                                <p class="contact-content">Số 1, Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Email</h3>
+                                <p class="contact-content">
+                                    <a href="#" class="contact-link">Exmaple@company.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Số điện thoại</h3>
+                                <p class="contact-content">
+                                    Hỗ trợ kĩ thuật: 
+                                    <a href="#" class="contact-link">0905 6788 8844</a>
+                                </p>
+                                <p class="contact-content">
+                                    Hỗ trợ kĩ thuật: 
+                                    <a href="#" class="contact-link">0905 6788 8844</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Contact -->
+        <!-- BEGIN: Side Navigation -->
+         <nav class="side-nav main">
+            <button class="close-nav">&#11166;</button>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item product">
+                    <a class="nav-link" href="#">Sản phẩm &plus;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tuyển dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đăng nhập</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="side-nav product">
+            <button class="close-nav product">&#11166;</button>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đồng hồ nam</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đồng hồ đôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đồng hồ nữ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Thương hiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đồng hồ treo tường</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dây đồng hồ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sản phẩm khác</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Side Navigation -->
+        <!-- BEGIN: Side Search -->
+        <div class="side-search">
+            <button class="close-search">&#11166;</button>
+            <h3>Tìm kiếm</h3>
+            <form class="side-search-form" action="#" method="GET">
+                <input id="searchInput" type="text" name="search" placeholder="Tìm kiếm...">
+                <button type="submit">
+                    <svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8"/>
+                        <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+                    </svg>
+                </button>
+            </form>
+            <!-- BEGIN: Search List -->
+            <ul class="search-list">
+                <li class="list-item">
+                    <a href="#">Search Result 1</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">Search Result 2</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">Search Result 3</a>
+                </li>
+                <!-- Add more search results here -->
+            </ul>
+            <!-- END: Search List -->
+        </div>
+        <!-- END: Side Search -->
+        <!-- BEGIN: Side Cart -->
+        <div class="side-cart">
+            <button class="close-cart">&#11166;</button>
+            <div class="cart-items">
+                <div class="item">
+                    <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                    <div class="item-details">
+                        <p class="item-name">Đồng hồ đeo tay</p>
+                        <span class="item-price">1.000&#8363;</span>
+                        <span class="item-quantity">x 1</span>
+                    </div>
+                    <div class="item-remove">&times;</div>
+                </div>
+                <div class="item">
+                    <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                    <div class="item-details">
+                        <p class="item-name">Đồng hồ đeo tay</p>
+                        <span class="item-price">4.000.000&#8363;</span>
+                        <span class="item-quantity">x 1</span>
+                    </div>
+                    <div class="item-remove">&times;</div>
+                </div>
+                <div class="item">
+                    <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                    <div class="item-details">
+                        <p class="item-name">Đồng hồ đeo tay</p>
+                        <span class="item-price">1.000&#8363;</span>
+                        <span class="item-quantity">x 1</span>
+                    </div>
+                    <div class="item-remove">&times;</div>
+                </div>
+            </div> 
+            <div class="cart-total">
+                <span class="total-label">Tổng tiền: </span>
+                <span class="total-price"></span>
+            </div>
+        </div>
+        <!-- END: Side Cart -->  
+    </div>
+    <!-- BEGIN: Footer -->
+    <footer>
+        <div class="bubble">
+            <div class="btn scroll-on-top">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0">
+                    </g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                    </g>
+                    <g id="SVGRepo_iconCarrier"> 
+                        <path d="M5 19L11.2929 12.7071C11.6834 12.3166 12.3166 12.3166 12.7071 12.7071L19 19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path> 
+                        <path d="M5 11L11.2929 4.70711C11.6834 4.31658 12.3166 4.31658 12.7071 4.70711L19 11" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path> 
+                    </g>
+                </svg>
+            </div>
+            <a href="#" class="btn">
+            <svg class="wow animate__animated animate__tada animate__infinite" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z" fill="#01E675"/><path d="M35.9930335,12 L35.9930335,12.0003982 L36.0069665,12.0003982 C49.2377485,12.0003982 60,22.7656853 60,36.0001991 C60,49.2343147 49.2377485,60 36.0069665,60 C31.1264337,60 26.598605,58.5469749 22.8044486,56.0355392 L13.5796047,58.9837983 L16.5700258,50.0669471 C13.6926611,46.116025 12,41.2484508 12,35.9998009 C12,22.7652871 22.7622515,12 35.9930335,12 Z M29.2928502,24.1908365 C28.8274878,23.0762798 28.4747837,23.0340708 27.7697737,23.0054006 C27.5297279,22.9914636 27.2622142,22.9775267 26.9656402,22.9775267 C26.0484504,22.9775267 25.0894615,23.245514 24.5110427,23.8380329 C23.8060327,24.557577 22.0568433,26.2363804 22.0568433,29.6792016 C22.0568433,33.1220228 24.5675709,36.4517558 24.9059439,36.9176476 C25.258648,37.3827431 29.8008078,44.5503098 36.8532971,47.4714915 C42.3683787,49.7571489 44.0049097,49.5453075 45.2600745,49.2773201 C47.093658,48.8823076 49.393002,47.5272392 49.9714208,45.891043 C50.5498395,44.2540504 50.5498395,42.8571713 50.3802549,42.5609119 C50.2110684,42.2646524 49.745308,42.0958164 49.0402979,41.7426147 C48.3352878,41.3898111 44.9073704,39.6966726 44.2584904,39.4708942 C43.6235435,39.2311789 43.0172587,39.3159951 42.5379633,39.9933302 C41.8608192,40.9386526 41.1980063,41.8983101 40.6617846,42.4764939 C40.2386193,42.9280506 39.5471441,42.9845947 38.9691235,42.7444812 C38.1932541,42.4203479 36.0212976,41.6577985 33.3409854,39.2733879 C31.2673561,37.4253503 29.8569379,35.125756 29.4481037,34.434484 C29.0388714,33.729275 29.4059066,33.3195291 29.7299485,32.9388517 C30.0826526,32.5012319 30.4210256,32.1910356 30.7737296,31.7816879 C31.1264337,31.3727384 31.3238843,31.1608969 31.549599,30.6810682 C31.7896448,30.2155745 31.6200602,29.7357458 31.4508737,29.3829422 C31.2816872,29.0301386 29.871269,25.5873174 29.2928502,24.1908365 Z" fill="#FFF"/></g></svg>
+            </a>
+            <a href="#" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                    <path fill="#2962ff" d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"></path><path fill="#eee" d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"></path><path fill="#2962ff" d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"></path><path fill="#2962ff" d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"></path><path fill="#2962ff" d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"></path><path fill="#2962ff" d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"></path>
+                </svg>
+            </a>
+            <a href="#" class="btn">
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs><radialGradient cx="19.2474387%" cy="99.4651948%" fx="19.2474387%" fy="99.4651948%" id="radialGradient-1" r="108.959588%"><stop offset="0%" stop-color="#0099FF"/><stop offset="60.9753877%" stop-color="#A033FF"/><stop offset="93.482299%" stop-color="#FF5280"/><stop offset="100%" stop-color="#FF7061"/></radialGradient></defs><g fill="none" fill-rule="evenodd" id="logo" stroke="none" stroke-width="1"><rect fill="#FFFFFF" fill-opacity="0" height="1024" id="bounding-box" width="1024" x="0" y="0"/><g id="logo"><path d="M512,122 C286.668,122 112,287.056 112,510 C112,626.6144 159.792,727.3824 237.6224,796.984 C244.156,802.832 248.1,811.024 248.368,819.792 L250.5464,890.944 C251.2424,913.64 274.6856,928.408 295.4536,919.24 L374.848,884.192 C381.5784,881.224 389.12,880.672 396.212,882.624 C432.696,892.656 471.5264,898 512,898 C737.332,898 912,732.944 912,510 C912,287.056 737.332,122 512,122 Z" fill="url(#radialGradient-1)" id="Path"/><path d="M271.8016,623.4688 L389.3016,437.0528 C407.992,407.3968 448.016,400.0128 476.06,421.0448 L569.5136,491.1352 C578.088,497.5672 589.8856,497.5328 598.424,491.0528 L724.6376,395.2648 C741.484,382.4808 763.4736,402.6408 752.2,420.5312 L634.7,606.9488 C616.008,636.6032 575.984,643.9888 547.9416,622.9552 L454.4856,552.8632 C445.912,546.4328 434.1136,546.4672 425.576,552.9472 L299.3616,648.7352 C282.516,661.5184 260.5256,641.3584 271.8016,623.4688 Z" fill="#FFFFFF" id="Path"/></g></g></svg>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3 class="footer-heading">Về chúng tôi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3 class="footer-heading">
+                        Chính sách
+                        <i class="fa-solid fa-plus"></i>
+                    </h3>
+                    <ul class="footer-list collapse">
+                        <li class="footer-item">
+                            <a href="#">Chính sách bảo mật</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Chính sách đổi trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Chính sách vận chuyển</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Chính sách thanh toán</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3 class="footer-heading">
+                        Hỗ trợ
+                        <i class="fa-solid fa-plus"></i>
+                    </h3>
+                    <ul class="footer-list collapse">
+                        <li class="footer-item">
+                            <a href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Hướng dẫn thanh toán</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Hướng dẫn đổi trả</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">Hướng dẫn vận chuyển</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3 class="footer-heading">Liên kết</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <path fill="#2962ff" d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"></path><path fill="#eee" d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"></path><path fill="#2962ff" d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"></path><path fill="#2962ff" d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"></path><path fill="#2962ff" d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"></path><path fill="#2962ff" d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-bottom-text">© 2021 - Bản quyền thuộc về <a href="#" class="footer-bottom-link">Watch Shop</a></p>
+                    <ul class="footer-bottom-list">
+                        <li class="footer-bottom-item">
+                            <a href="#" class="footer-bottom-link">Điều khoản sử dụng</a>
+                        </li>
+                        <li class="footer-bottom-item">
+                            <a href="#" class="footer-bottom-link">Chính sách bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+    <script> 
+        // Wow js
+        new WOW().init();
+
+        // Swiper js
+        const swiper = new Swiper('.brand-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+            sliderperView: 5,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 60,
+                },
+            }
+        });
+
+        const swiperSub = new Swiper('.banner', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+            sliderperView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+
+        const certifications = new Swiper('.certifications', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            speed: 1000,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 60,
+                },
+            }
+        });
+    </script>
+    <script src="/index.js"></script>
+</body>
+</html>
