@@ -61,7 +61,6 @@
     // Side Navigation Active
     const sideNavProduct = document.querySelector(".side-nav.product");
     const navBtnProduct = document.querySelector(".nav-item.product");
-    console.log(navBtnProduct);
     navBtnProduct.addEventListener("click", function(){
         console.log("click");
         sideNavProduct.classList.toggle("open");
