@@ -1702,12 +1702,14 @@ footer .footer-bottom a:hover {
     /* Footer */
 
     footer .footer-list.collapse {
+        visibility: hidden;
         opacity: 0;
         height: 0;
         transition: all 0.3s ease-in-out;
     }
 
     footer .footer-list.collapse.active {
+        visibility: visible;
         opacity: 1;
         height: 165px;
         transition: all 0.3s ease-in-out;

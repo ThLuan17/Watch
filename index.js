@@ -33,7 +33,6 @@
     // End Side cart Active
 
     // Side Search Active
-
     const search = document.querySelector(".side-search");
     const searchBtn = document.querySelector(".search-bar");
     searchBtn.addEventListener("click", function(){
@@ -58,7 +57,7 @@
         sideNav.classList.remove("open");
     });
 
-    // Side Navigation Active
+    // Side Navigation Product Active
     const sideNavProduct = document.querySelector(".side-nav.product");
     const navBtnProduct = document.querySelector(".nav-item.product");
     navBtnProduct.addEventListener("click", function(){
