@@ -626,6 +626,13 @@ img {
     border-radius: .4rem;
     transform: translateX(50%);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-list-item .quick-views:hover {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 .product-list-sale {
@@ -787,6 +794,13 @@ img {
     border-radius: .4rem;
     padding: .5rem 1rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.home .product-list .watch-more .watch-more-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Pagination */
@@ -905,6 +919,13 @@ img {
     border-radius: .4rem;
     padding: .5rem 1rem;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.news .news-watch-full .watch-full-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Home News */
