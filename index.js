@@ -100,6 +100,8 @@
     });
     cartTotal.textContent = total.toLocaleString("vi-VN") + "đ";
 
+    // Quantity total
+
     // Product Filter
     /// Get references to the filters
     const brandFilter = document.querySelector('.brand-filter');
@@ -146,16 +148,16 @@
         });
     });
 
-    
+    // Function in Product Page
     if (window.location.pathname.includes('product.html')) {
         // Function to apply all filters
+        const products = document.querySelectorAll('.product-list-item');
         function applyFilters() {
         const brand = brandFilter.value.toLowerCase();
         const Price = priceFilter.value
         const maxPrice = Price.split("-")[1].replace(/\./g, "");
         const minPrice = Price.split("-")[0].replace(/\./g, "");
         const minRating = ratingFilter.value;
-        const products = document.querySelectorAll('.product-list-item');
         const sort = sortFilter.value;
         // Convert NodeList to Array
         let productsArray = Array.from(products);
@@ -202,17 +204,73 @@
         ratingFilter.addEventListener('change', applyFilters);
         sortFilter.addEventListener('change', applyFilters);
 
+        // News Watch Full
+        const watchFullBtn = document.querySelector(".watch-full-btn");
+        watchFullBtn.addEventListener("click", function(){
+            const newsWatch = document.querySelector(".news .container");
+            newsWatch.classList.toggle("full");
+            watchFullBtn.textContent = newsWatch.classList.contains("full") ? "Thu gọn" : "Mở rộng";
+        });
+
+        // Add a click event listener to the reset filters button
+        const resetFiltersButton = document.querySelector('#reset-filter');
+        resetFiltersButton.addEventListener('click', resetFilters);
+
+
+        // Save Product filters to localStorage
+        const saveFiltersButton = document.querySelector('#save-filter');
         
+        // Function to save filters
+        function saveFilters() {
+            // Select all filter inputs
+            const filters = document.querySelectorAll('.filter-input');
+            
+            // Iterate over each filter input
+            filters.forEach(function(filter) {
+                // Save the filter value to localStorage
+                localStorage.setItem(filter.id, filter.value);
+            });
+        }
+        saveFiltersButton.addEventListener('click', saveFilters);
+        
+        //  Function to load filters
+        function loadFilters() {
+            // Select all filter inputs
+            const filters = document.querySelectorAll('.filter-input');
+            
+            // Iterate over each filter input
+            filters.forEach(function(filter) {
+                // Load the filter value from localStorage
+                const filterValue = localStorage.getItem(filter.id);
+                
+                // Set the value of the filter input
+                filter.value = filterValue;
+            });
+            
+            // Apply filters
+            applyFilters();
+        }
 
-    // News Watch Full
-    const watchFullBtn = document.querySelector(".watch-full-btn");
-    watchFullBtn.addEventListener("click", function(){
-        const newsWatch = document.querySelector(".news .container");
-        newsWatch.classList.toggle("full");
-        watchFullBtn.textContent = newsWatch.classList.contains("full") ? "Thu gọn" : "Mở rộng";
-    });
-
+        // Load the filters when the page loads
+        window.addEventListener('load', loadFilters);
     }
+
+    // Function to reset all filters
+    function resetFilters() {
+        // Select all filter inputs
+        const filters = document.querySelectorAll('.filter-input');
+        
+        // Iterate over each filter input
+        filters.forEach(function(filter) {
+            // Reset the filter value
+            filter.value = 'all-all';
+            localStorage.setItem(filter.id, filter.value)
+        });
+        
+        // Apply filters
+        applyFilters();
+    }
+
     // Active Footer Collapse
     const footerHeading = document.querySelectorAll(".footer-heading");
     footerHeading.forEach(function(heading) {
@@ -228,6 +286,62 @@
                 footerList.classList.add("active");
             }
         });
+    });
+
+    // Modal Product Deatails Active
+    const modalProductDetails = document.querySelector("#productDetailsModal");
+    const ProductDetailsBtn = document.querySelectorAll(".product-list-item .quick-views");
+    const closeProductDetailsBtn = document.querySelector(".close-modal");
+    const ProductDetailsTitle = modalProductDetails.querySelector(".modal-body-title");
+    const ProductDetailsBrand= modalProductDetails.querySelector(".modal-body-brand");
+    const ProductDetailsPrice = modalProductDetails.querySelector(".modal-body-price");
+    const ProductDetailsOldPrice = modalProductDetails.querySelector(".modal-body-old-price");
+
+    ProductDetailsBtn.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            var ProductListItem = document.querySelector(".product-list-item");
+            modalProductDetails.classList.add("open");
+            ProductDetailsTitle.textContent = ProductListItem.querySelector(".product-list-item-name").textContent;
+            ProductDetailsPrice.textContent = ProductListItem.querySelector(".product-list-item-price").textContent;
+            ProductDetailsBrand.textContent = ProductListItem.querySelector(".product-list-item-brand").textContent;
+            ProductDetailsOldPrice.textContent = ProductListItem.querySelector(".product-list-item-old-price").textContent;
+            
+        });
+    });
+
+    closeProductDetailsBtn.addEventListener("click", function() {
+        modalProductDetails.classList.remove("open");
+    });
+
+    // Product Details Quantity 
+    const quantityInput = document.querySelector(".quantity-input");
+    const quantityMinusBtn = document.querySelector(".quantity-btn[data-type='minus']");
+    const quantityPlusBtn = document.querySelector(".quantity-btn[data-type='plus']");
+
+    quantityMinusBtn.addEventListener("click", function() {
+        console.log("click");
+        if (quantityInput.value > 1) {
+            quantityInput.value--;
+        }
+
+        if (quantityInput.value == 1) {
+            quantityMinusBtn.disabled = true;
+        }
+
+        quantityPlusBtn.disabled = false;
+    });
+
+    quantityPlusBtn.addEventListener("click", function() {
+
+        if (quantityInput.value < 10) {
+            quantityInput.value++;
+        }
+
+        if (quantityInput.value == 10) {
+            quantityPlusBtn.disabled = true;
+        }
+
+        quantityMinusBtn.disabled = false;
     });
 
     // Scroll on top 

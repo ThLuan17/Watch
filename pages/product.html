@@ -332,8 +332,11 @@
                 </div>
                 <div class="filter-content">
                     <div class="filter-item">
+                        <button id="reset-filter" class="filter-btn">reset bộ lọc</button>
+                    </div>
+                    <div class="filter-item">
                         <label for="brand">Hãng:</label>
-                        <select class="brand-filter" id="brand" name="brand">
+                        <select class="brand-filter filter-input" id="brand" name="brand">
                             <option value="all-all">Tất cả</option>
                             <option value="rolex">Rolex</option>
                             <option value="omega">Omega</option>
@@ -343,7 +346,7 @@
                     </div>
                     <div class="filter-item">
                         <label for="price">Giá:</label>
-                        <select class="price-filter" id="price" name="price">
+                        <select class="price-filter filter-input" id="price" name="price">
                             <option value="all-all">Tất cả</option>
                             <option value="0-1.000.000">0 - 1tr</option>
                             <option value="1.000.000-2.000.000">1tr - 2tr</option>
@@ -352,7 +355,7 @@
                     </div>
                     <div class="filter-item">
                         <label for="rating">Đánh giá:</label>
-                        <select class="rating-filter" id="rating" name="rating">
+                        <select class="rating-filter filter-input" id="rating" name="rating">
                             <option value="all-all">Tất cả</option>
                             <option value="1">&#9733;</option>
                             <option value="2">&#9733; &#9733;</option>
@@ -363,11 +366,14 @@
                     </div>
                     <div class="filter-item">
                         <label for="sort">Sắp xếp:</label>
-                        <select class="sort-filter" id="sort" name="sort">
+                        <select class="sort-filter filter-input" id="sort" name="sort">
                             <option value=""></option>
                             <option value="price-asc">Giá tăng dần</option>
                             <option value="price-desc">Giá giảm dần</option>
                         </select>
+                    </div>
+                    <div class="filter-item">
+                        <button id="save-filter" class="filter-btn">Lưu bộ lọc</button>
                     </div>
                 </div>
             </div>
@@ -381,6 +387,8 @@
                 </div>
                 <div class="product-list-content">
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -403,6 +411,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -425,6 +435,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -447,6 +459,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -469,6 +483,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -491,6 +507,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -513,6 +531,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -535,6 +555,8 @@
                         </div>
                     </div>
                     <div class="product-list-item">
+                        <div class="quick-views">Xem nhanh</div>
+                        <div class="product-list-sale">10%</div>
                         <div class="product-list-item-img">
                             <a href="#">
                                 <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
@@ -599,6 +621,50 @@
             </div>
         </div>  
         <!-- END: News -->
+        <!-- BEGIN: Section Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Địa chỉ</h3>
+                                <p class="contact-content">Số 1, Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Email</h3>
+                                <p class="contact-content">
+                                    <a href="#" class="contact-link">Exmaple@company.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div class="contact-details">
+                                <h3 class="contact-title">Số điện thoại</h3>
+                                <p class="contact-content">
+                                    Hỗ trợ kĩ thuật: 
+                                    <a href="#" class="contact-link">0905 6788 8844</a>
+                                </p>
+                                <p class="contact-content">
+                                    Hỗ trợ kĩ thuật: 
+                                    <a href="#" class="contact-link">0905 6788 8844</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Contact -->
         <!-- BEGIN: Side Navigation -->
         <nav class="side-nav main">
             <button class="close-nav">&#11166;</button>
@@ -719,7 +785,57 @@
                 <span class="total-price"></span>
             </div>
         </div>
-        <!-- END: Side Cart -->    
+        <!-- END: Side Cart -->
+        <!-- BEGIN: Product Details Modal -->
+        <!-- BEGIN: Product Details Modal -->
+        <div class="modal" id="productDetailsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add product details here -->
+                    <div class="modal-body-img">
+                        <img src="../images/ulysse-nardin-executive-skeleton-tourbillon-mens-hand-wound-watch-1713-139le-us.webp" alt="">
+                    </div>
+                    <div class="modal-body-content">
+                        <h3 class="modal-body-title"></h3>
+                        <p class="modal-body-brand"></p>
+                        <p class="modal-body-price"></p>
+                        <p class="modal-body-old-price"></p>
+
+                        <!-- Product Option -->
+                        <div class="modal-body-option">
+                            <label class="option-label" for="option-select">Size:</label>
+                            <select id="option-select" class="option-select">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <div class="modal-body-option">
+                            <label class="option-label" for="option-select">Color:</label>
+                            <select id="option-select" class="option-select">
+                                <option value="brown">Brown</option>
+                                <option value="silver">Silver</option>
+                            </select>
+                        </div>
+
+                        <!-- Product Quantity -->
+                        <div class="modal-body-quantity">
+                            <button class="quantity-btn" data-type="minus">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn" data-type="plus">+</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-footer-btn">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+        <!-- END: Product Details Modal -->  
     </div>
     <!-- BEGIN: Footer -->
     <footer>
