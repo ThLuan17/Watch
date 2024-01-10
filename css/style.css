@@ -1018,6 +1018,7 @@ img {
 .contact .contact-details {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: 1rem;
 }
 
@@ -1033,6 +1034,7 @@ img {
     font-size: 1rem;
     font-weight: 300;
     color: #888;
+    margin-left: .5rem;
 }
 
 /* Side Cart */
